@@ -1,24 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Divisibles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuS-hn-cHn">
+                                <rect key="frame" x="161" y="203" width="92" height="31"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pulse Aquí" cornerStyle="capsule" titleAlignment="center"/>
+                                <connections>
+                                    <action selector="boton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="96P-bE-gCX"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduzca un número" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K3A-dH-tyo">
+                                <rect key="frame" x="135.5" y="104" width="143" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                <connections>
+                                    <action selector="numero:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="wfn-YS-Obb"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido a nuestro programa" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-Vq-AKC">
+                                <rect key="frame" x="100.5" y="294" width="213.5" height="18"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="34"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="hha-ae-Uy0">
+                                <rect key="frame" x="30" y="366" width="354" height="383"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="383" id="e5w-p4-Fm5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                </variation>
+                            </label>
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EI0-XJ-uAE">
+                                <rect key="frame" x="20" y="342" width="374" height="4"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                            </progressView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="DZY-zT-dsf">
+                                <rect key="frame" x="197" y="163" width="20" height="20"/>
+                                <color key="color" systemColor="systemBlueColor"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DuS-hn-cHn" firstAttribute="top" secondItem="DZY-zT-dsf" secondAttribute="bottom" constant="20" id="1JV-fE-lIl"/>
+                            <constraint firstItem="hha-ae-Uy0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="32c-xi-620"/>
+                            <constraint firstItem="EI0-XJ-uAE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6wW-ZA-7oc">
+                                <variation key="heightClass=compact-widthClass=regular" constant="90"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="90"/>
+                            </constraint>
+                            <constraint firstItem="EI0-XJ-uAE" firstAttribute="top" secondItem="F3Y-Vq-AKC" secondAttribute="bottom" constant="30" id="Est-kj-2cL"/>
+                            <constraint firstItem="DuS-hn-cHn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JZU-0U-7dn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EI0-XJ-uAE" secondAttribute="trailing" constant="20" id="KDo-q2-GCC">
+                                <variation key="heightClass=compact-widthClass=regular" constant="90"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="90"/>
+                            </constraint>
+                            <constraint firstItem="DZY-zT-dsf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ow0-w3-GyS"/>
+                            <constraint firstItem="F3Y-Vq-AKC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Plf-Ch-o1t"/>
+                            <constraint firstItem="DZY-zT-dsf" firstAttribute="top" secondItem="K3A-dH-tyo" secondAttribute="bottom" constant="25" id="Q30-qg-uq2"/>
+                            <constraint firstItem="F3Y-Vq-AKC" firstAttribute="top" secondItem="DuS-hn-cHn" secondAttribute="bottom" constant="60" id="cKw-eY-WQR">
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="K3A-dH-tyo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fWP-ta-gvS"/>
+                            <constraint firstItem="hha-ae-Uy0" firstAttribute="top" secondItem="EI0-XJ-uAE" secondAttribute="bottom" constant="20" id="gai-eW-qfa"/>
+                            <constraint firstItem="K3A-dH-tyo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="jvu-Wp-FrE">
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="F3Y-Vq-AKC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pRr-9b-cmt"/>
+                            <constraint firstItem="hha-ae-Uy0" firstAttribute="centerX" secondItem="EI0-XJ-uAE" secondAttribute="centerX" id="tz7-0r-iD5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="boton" destination="DuS-hn-cHn" id="1Lu-vu-umF"/>
+                        <outlet property="conteo" destination="hha-ae-Uy0" id="rzt-Od-9Qf"/>
+                        <outlet property="datos" destination="F3Y-Vq-AKC" id="foo-jC-tTc"/>
+                        <outlet property="number" destination="K3A-dH-tyo" id="uUh-oA-cGP"/>
+                        <outlet property="progresoBarra" destination="EI0-XJ-uAE" id="fyr-cD-pzq"/>
+                        <outlet property="spinner" destination="DZY-zT-dsf" id="ygl-CN-71A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
